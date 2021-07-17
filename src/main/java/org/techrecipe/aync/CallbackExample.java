@@ -5,6 +5,10 @@ import java.util.concurrent.TimeUnit;
 
 public class CallbackExample {
 
+    public static void main(){
+
+
+    }
     public static void delay(int seconds){
         try {
             TimeUnit.SECONDS.sleep(seconds);

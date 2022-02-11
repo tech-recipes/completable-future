@@ -17,7 +17,7 @@ public class CombineExample {
         return CompletableFuture.supplyAsync(
                 () -> {
                     System.out.println(" getUserEmail() - " + Thread.currentThread().getName());
-                    delay(3);
+                    delay(6);
                     return "tech.recipe@yt.com";
                 }
         );
@@ -42,8 +42,6 @@ public class CombineExample {
                     return e + w ;
                 });
 
-        System.out.println("Do something!");
-        delay(3);
         System.out.println(future.join());
         long endTime = System.currentTimeMillis();
 
